@@ -9,9 +9,7 @@ public class Main {
         payments[2] = new Bill(new BigDecimal(30000), new ProgressiveTaxType(), new TaxService());
         payments[3] = new Bill(new BigDecimal(110000), new ProgressiveTaxType(), new TaxService());
 
-
-        for (int i = 0; i < payments.length; ++i) {
-            Bill bill = payments[i];
+        for (Bill bill : payments) {
             bill.payTaxes();
         }
     }

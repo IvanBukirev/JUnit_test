@@ -11,7 +11,7 @@ public class ProgressiveTaxTypeTest {
         BigDecimal amount = new BigDecimal(100000.00);
         BigDecimal expected = new BigDecimal("15000.00");
 
-        // when:
+         // when:
         BigDecimal result = sut.calculateTaxFor(amount);
         // then:
         assertEquals(expected, result);
